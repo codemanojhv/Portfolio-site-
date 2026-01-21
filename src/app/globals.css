@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-rozha-one);
+  --font-decorative: var(--font-great-vibes);
+
+  --color-saffron: #f59e0b;
+  --color-saffron-dark: #d97706;
+  --color-karnataka-yellow: #facc15;
+  --color-charcoal: #334155;
+  --color-cream: #fffaf0;
+  --color-warm-paper: #fdf6e3;
+  --color-whatsapp-green: #075E54;
+  --color-whatsapp-light: #DCF8C6;
+  --color-whatsapp-bg: #E5DDD5;
+}
+
+:root {
+  --background: #fffaf0;
+  --foreground: #334155;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1e293b;
+    --foreground: #f8fafc;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
