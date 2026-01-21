@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Classes", href: "/classes" },
+    { name: "Courses", href: "/classes" },
     { name: "Team", href: "/team" },
     { name: "Contact", href: "/contact" },
   ];
@@ -52,7 +52,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/contact"
               className="bg-saffron hover:bg-saffron-dark text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg active:scale-95"
             >
               Enroll Now
@@ -90,7 +90,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                href="#contact"
+                href="/contact"
                 className="bg-saffron text-white px-6 py-3 rounded-xl font-semibold text-center"
                 onClick={() => setIsOpen(false)}
               >

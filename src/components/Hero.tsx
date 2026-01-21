@@ -1,9 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, GraduationCap, Users } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, BookOpen, GraduationCap, Users, PlayCircle, CheckCircle2 } from "lucide-react";
 
 const Hero = () => {
+  const features = [
+    "Sanskrit Language",
+    "Spoken Kannada",
+    "Vedic Mathematics",
+    "Vedic Chanting"
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-warm-paper">
       {/* Decorative background elements */}
@@ -41,10 +49,28 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-xl text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0"
+              className="text-xl text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Experience the Digital Gurukul. A warm, trustworthy space bridging ancient Indian wisdom with modern technology for a holistic learning experience.
+              Experience the Digital Gurukul. We bring ancient Indian wisdom to modern learners through live interactive online classes in Sanskrit, Kannada, and Vedic Mathematics.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="mb-10 flex flex-wrap gap-3 justify-center lg:justify-start"
+            >
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-orange-100"
+                >
+                  <CheckCircle2 className="text-saffron w-4 h-4" />
+                  <span className="text-sm font-medium text-charcoal">{feature}</span>
+                </div>
+              ))}
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -55,8 +81,9 @@ const Hero = () => {
                 Start Learning Now
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="bg-white hover:bg-cream text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all border border-orange-100">
-                Explore Courses
+              <button className="bg-white hover:bg-cream text-charcoal px-8 py-4 rounded-full font-bold text-lg transition-all border border-orange-100 flex items-center gap-2">
+                <PlayCircle className="text-saffron" />
+                Watch Demo
               </button>
             </motion.div>
 
@@ -90,13 +117,15 @@ const Hero = () => {
             className="relative hidden lg:block"
           >
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-              <img
-                src="https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?auto=format&fit=crop&q=80&w=800"
-                alt="Education"
+              <Image
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+                alt="Traditional Indian education"
+                width={800}
+                height={600}
                 className="w-full h-full object-cover"
               />
             </div>
-            
+
             {/* Floating cards */}
             <motion.div
               animate={{ y: [0, -20, 0] }}
@@ -123,6 +152,20 @@ const Hero = () => {
               <div>
                 <p className="font-bold text-charcoal">Certified Courses</p>
                 <p className="text-sm text-slate-500">Globally Recognized</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="absolute top-1/2 -left-20 bg-white p-5 rounded-2xl shadow-xl z-20"
+            >
+              <div className="flex items-center gap-3">
+                <Users className="text-saffron" />
+                <div>
+                  <p className="font-bold text-charcoal">5000+</p>
+                  <p className="text-xs text-slate-500">Active Learners</p>
+                </div>
               </div>
             </motion.div>
           </motion.div>
