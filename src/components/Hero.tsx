@@ -34,7 +34,8 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-5xl md:text-7xl font-serif font-bold text-charcoal leading-tight mb-6"
             >
-              Reviving Ancient Wisdom for the <span className="text-saffron">Modern World</span>
+              Master the <span className="text-saffron">Roots.</span> <br />
+              Connect with <span className="text-saffron">Culture.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -42,7 +43,7 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-xl text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0"
             >
-              Master Sanskrit, Kannada, and Vedic Mathematics through our interactive, personalized learning platform designed for the 21st century.
+              Experience the Digital Gurukul. A warm, trustworthy space bridging ancient Indian wisdom with modern technology for a holistic learning experience.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

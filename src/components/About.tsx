@@ -41,7 +41,7 @@ const About = () => {
               Our Philosophy
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-8 leading-tight">
-              Bridging the gap between <span className="text-saffron">Tradition</span> and <span className="text-saffron">Technology</span>
+              A Modern Approach to <span className="text-saffron">Tradition</span>
             </h2>
             <p className="text-slate-600 text-lg mb-6 leading-relaxed">
               At MitraEdu, we believe that ancient wisdom shouldn't be confined to old manuscripts. Our mission is to make the profound teachings of Sanskrit, the logical beauty of Kannada, and the mathematical brilliance of the Vedas accessible to everyone, everywhere.

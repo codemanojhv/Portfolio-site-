@@ -41,7 +41,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-4"
           >
-            Explore Our <span className="text-saffron">Premium Courses</span>
+            Explore <span className="text-saffron">Classes</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

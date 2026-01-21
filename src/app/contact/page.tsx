@@ -14,7 +14,7 @@ export default function ContactPage() {
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <MapPin className="shrink-0" />
-                  <p>123 Vedic Way, Digital Gurukul, Karnataka, India</p>
+                  <p>Yelahanka New Town, Bangalore, Karnataka 560064, India</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="shrink-0" />
